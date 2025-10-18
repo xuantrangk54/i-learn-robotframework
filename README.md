@@ -3,3 +3,10 @@
 ```
 pip freeze > requirements.txt
 ```
+
+Create template structure for test project
+
+```
+python init_robot_project.py
+````
+
