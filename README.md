@@ -10,3 +10,9 @@ Create template structure for test project
 python init_robot_project.py
 ````
 
+Run normal
+
+```
+poetry run  robot --outputdir results/ tests/
+
+```
