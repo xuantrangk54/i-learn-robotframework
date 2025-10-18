@@ -1,0 +1,17 @@
+[project]
+name = "i-learn-robotframework"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "xuantrangk54"}
+]
+readme = "README.md"
+requires-python = ">=3.11,<4"
+dependencies = [
+    "robotframework-seleniumlibrary (>=6.8.0,<7.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
