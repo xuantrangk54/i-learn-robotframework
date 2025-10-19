@@ -22,3 +22,8 @@ web to support learn
 
 [webtoLearn](https://i-learn-robotframework-webserver.vercel.app/)
 
+
+```
+pytest selenium-python-prune/006-locator-by-name.py
+
+```
