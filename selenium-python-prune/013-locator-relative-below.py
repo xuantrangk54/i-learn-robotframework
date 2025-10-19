@@ -15,6 +15,9 @@ def driver():
 
 def test_locator_by_name(driver):
     driver.get('https://i-learn-robotframework-webserver.vercel.app/login3.html')
-    email_locator = locate_with(By.TAG_NAME, "label").above({By.ID: "email"})
-    assert driver.find_element(email_locator).text == "Email hoặc Tên đăng nhập"
+    email_locator = locate_with(By.TAG_NAME, "input").below({By.ID: "email"})
+    element = driver.find_element(email_locator)
+    attr = element.get_attribute("id")
+    assert attr == "password"
+
 
