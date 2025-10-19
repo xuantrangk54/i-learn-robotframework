@@ -52,9 +52,7 @@ def test_explicit_options(driver):
     driver.get('https://www.selenium.dev/selenium/web/dynamic.html')
     revealed = driver.find_element(By.ID, "revealed")
     driver.find_element(By.ID, "reveal").click()
-
     errors = [NoSuchElementException, ElementNotInteractableException]
     wait = WebDriverWait(driver, timeout=2, poll_frequency=.2, ignored_exceptions=errors)
     wait.until(lambda _ : revealed.send_keys("Displayed") or True)
-
     assert revealed.get_property("value") == "Displayed"
