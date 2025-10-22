@@ -313,6 +313,23 @@ files = [
 ]
 
 [[package]]
+name = "mypackage"
+version = "0.1.0"
+description = ""
+optional = false
+python-versions = ">=3.11"
+groups = ["main"]
+files = []
+develop = true
+
+[package.dependencies]
+robotframework = ">=7.3.2,<8.0.0"
+
+[package.source]
+type = "directory"
+url = "../package-support-robo/mypackage"
+
+[[package]]
 name = "mysql-connector-python"
 version = "9.4.0"
 description = "A self-contained Python driver for communicating with MySQL servers, using an API that is compliant with the Python Database API Specification v2.0 (PEP 249)."
@@ -693,4 +710,4 @@ h11 = ">=0.9.0,<1"
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.11,<4"
-content-hash = "61d90685300ff2d0086e32b379cdc9190819007e2d3687ab79f5aa819417a022"
+content-hash = "7957143b33fff21e267eee379c93c85712fecb83e7134f3a254a5e63bfad15ca"

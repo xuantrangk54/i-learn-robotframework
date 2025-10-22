@@ -1,5 +1,5 @@
 *** Settings ***
-Library    libs.myutils.MyUtils.MyUtils
+Library    mypackage.MyUtils.MyUtils    WITH NAME    MyUtils
 
 *** Test Cases ***
 Test Greeting
@@ -9,9 +9,12 @@ Test Multiply
     ${result}=    Multiply    4    5
     Log To Console    Result: ${result}
 
+Test Keyword With Custom Name Decorator
+    RenameKeywordWithCustomNameByDecoratorNew
+    KeywordWithCustomNameByVairableNew
 
-*** Test Cases ***
-Check Keywords
-    ${keywords}=    Get Library Instance    libs.myutils.MyUtils.MyUtils
-    Log    ${keywords}
+
+
+    
+
 
