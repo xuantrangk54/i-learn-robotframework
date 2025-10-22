@@ -27,3 +27,4 @@ Test for window
     Log    @{locations 1}
     Log    @{locations 2}
     Set Selenium Timeout    10
+    Capture Page Screenshot

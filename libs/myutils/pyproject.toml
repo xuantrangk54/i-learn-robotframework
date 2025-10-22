@@ -1,0 +1,9 @@
+[project]
+name = "myutils"
+version = "0.1.0"
+description = "My custom Robot Framework utils"
+authors = [ { name = "xuantrangk54", email = "xuantrangk54@gmail.com" }]
+
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
