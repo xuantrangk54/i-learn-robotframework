@@ -1,5 +1,5 @@
 *** Settings ***
-Library    myutils.MyUtils
+Library    libs.myutils.MyUtils.MyUtils
 
 *** Test Cases ***
 Test Greeting
@@ -8,4 +8,10 @@ Test Greeting
 Test Multiply
     ${result}=    Multiply    4    5
     Log To Console    Result: ${result}
+
+
+*** Test Cases ***
+Check Keywords
+    ${keywords}=    Get Library Instance    libs.myutils.MyUtils.MyUtils
+    Log    ${keywords}
 

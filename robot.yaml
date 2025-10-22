@@ -1,0 +1,7 @@
+robot:
+  executable: C:\\Users\\xuant\\AppData\\Local\\pypoetry\\Cache\\virtualenvs\\i-learn-robotframework-3tglp6c8-py3.11\\Scripts\\python.exe
+  extraPaths:
+    - libs
+    - D:/Gits/i-learn-robotframework/libs
+  libraries:
+    - myutils.MyUtils.MyUtils

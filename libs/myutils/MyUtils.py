@@ -1,6 +1,8 @@
 # libs/my_utils.py
 class MyUtils:
     """Custom utilities for Robot Framework"""
+    def __init__(self):
+        pass
 
     def say_hello(self, name: str):
         """Say hello to someone"""

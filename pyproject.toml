@@ -13,7 +13,6 @@ dependencies = [
     "mysql-connector-python (>=9.4.0,<10.0.0)",
     "selenium (>=4.37.0,<5.0.0)",
     "pytest (>=8.4.2,<9.0.0)",
-    "myutils @ file:///D:/Gits/i-learn-robotframework/libs/myutils"
 ]
 
 
@@ -23,4 +22,5 @@ requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.dependencies]
-myutils = {develop = true}
+myutils = { path = "libs/myutils", develop = true }
+
